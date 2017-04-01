@@ -1,0 +1,26 @@
+.scroll_pane{
+    -fx-background-color: transparent;
+}
+
+.winControl{
+    -fx-background-color: #3c92ca;
+}
+
+.btn{
+    -fx-background-color: #4087c3;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.btn:hover {
+    -fx-background-color: #4181be;
+    -fx-text-fill: white;
+}
+
+.btn:pressed {
+    -fx-background-color: #417cb9;
+    -fx-text-fill: white;
+ }
+

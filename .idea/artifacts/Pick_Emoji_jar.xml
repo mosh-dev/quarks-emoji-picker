@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Pick Emoji:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Pick_Emoji_jar</output-path>
+    <root id="archive" name="Pick Emoji.jar">
+      <element id="module-output" name="Pick Emoji" />
+    </root>
+  </artifact>
+</component>

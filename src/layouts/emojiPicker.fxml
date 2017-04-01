@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity"
+      maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="240.0"
+      prefWidth="360.0"
+      styleClass="app"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.emojiPicker">
+
+   <children>
+      <Pane fx:id="pane"
+            onMouseDragged="#onDrag"
+            onMousePressed="#onPressed"
+            prefHeight="40.0"
+            prefWidth="360.0"
+            styleClass="winControl">
+         <children>
+            <Button alignment="CENTER"
+                    contentDisplay="CENTER"
+                    layoutX="20.0"
+                    layoutY="8.0"
+                    mnemonicParsing="false"
+                    onAction="#navLeft"
+                    styleClass="btn"
+                    text="&lt;"
+                    textAlignment="CENTER"
+                    textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </Button>
+
+            <Button alignment="CENTER"
+                    contentDisplay="CENTER"
+                    layoutX="50.0"
+                    layoutY="8.0"
+                    mnemonicParsing="false"
+                    onAction="#navRight"
+                    styleClass="btn"
+                    text="&gt;"
+                    textAlignment="CENTER"
+                    textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fx:id="pack_name"
+                  fill="WHITE"
+                  fontSmoothingType="LCD"
+                  layoutX="84.0"
+                  layoutY="26.0"
+                  strokeType="OUTSIDE"
+                  strokeWidth="0.0"
+                  text="Name"
+                  textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel Bold Italic" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="msg"
+                  fill="WHITE"
+                  fontSmoothingType="LCD"
+                  layoutX="170.0"
+                  layoutY="25.0"
+                  strokeType="OUTSIDE"
+                  strokeWidth="0.0"
+                  textAlignment="CENTER" />
+            <Button alignment="CENTER_RIGHT"
+                    layoutX="292.0"
+                    layoutY="8.0"
+                    mnemonicParsing="false"
+                    onMouseClicked="#minApp"
+                    styleClass="btn"
+                    text="-"
+                    textAlignment="CENTER"
+                    textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_RIGHT"
+                    layoutX="322.0"
+                    layoutY="8.0"
+                    mnemonicParsing="false"
+                    onMouseClicked="#closeApp"
+                    styleClass="btn"
+                    text="X"
+                    textAlignment="CENTER"
+                    textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+
+      <ScrollPane fx:id="scroll_pane"
+                  layoutY="39.0"
+                  prefHeight="202.0"
+                  prefWidth="360.0"
+                  styleClass="scroll_pane" />
+   </children>
+</Pane>
